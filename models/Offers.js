@@ -1,8 +1,9 @@
 const {DataTypes} = require('sequelize'); 
 const sequelize = require('../config/database');
+const ProductModel = require('./Product');
 
 // Define the Offers model
-const Offer = sequelize.define('offer', {
+const OfferModel = sequelize.define('offer', {
         ID: {
             type: DataTypes.INTEGER,
             primaryKey: true,
@@ -33,4 +34,5 @@ const Offer = sequelize.define('offer', {
     }
 );
 
-module.exports = Offer;
+
+module.exports = OfferModel;
